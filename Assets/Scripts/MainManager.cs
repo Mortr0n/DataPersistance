@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainManager : MonoBehaviour
 {
+    public TMP_Text mainHighScoreText;
+    
     public Brick BrickPrefab;
     public int LineCount = 6;
     public Rigidbody Ball;
@@ -36,6 +39,14 @@ public class MainManager : MonoBehaviour
                 brick.onDestroyed.AddListener(AddPoint);
             }
         }
+
+        string hScoreName = GameManager.Instance.GetCurrentName();
+        if (hScoreName != "")
+        {
+            string hScore = GameManager.Instance.GetHighScore();
+            mainHighScoreText.text = $"Best Score: {hScoreName}: {hScore} ";
+         }
+
     }
 
     private void Update()
