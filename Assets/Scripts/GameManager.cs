@@ -24,20 +24,44 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        saveData = SaveManager.Instance.GetCurrentSaveData();
         
+        FindUIElements();
+        if (saveData != null)
+        {
+            UpdateHighScoreText(saveData.HighScore);
+        }
+    }
+
+    private void FindUIElements()
+    {
+        highScoreText = GameObject.Find("HighScoreText")?.GetComponent<TMP_Text>();
+        nameText = GameObject.Find("NameText")?.GetComponent <TMP_Text>();
     }
 
     void Start()
-    {
+    { 
         saveManager = SaveManager.Instance;
         if (saveManager == null)
         {
             Debug.LogError("SaveManager Instance not found!");
             return;
         }
-
-            if (saveData != null)
+        saveData = saveManager.GetCurrentSaveData();
+        //Debug.Log($"score {saveManager.GetCurrentSaveData().HighScore} "); 
+        if (saveData != null)
         {
+            
             UpdateHighScoreText(saveData.HighScore);
         }
         
@@ -54,7 +78,7 @@ public class GameManager : MonoBehaviour
     public void UpdateHighScoreText(int score)
     {
         SetHighScore(score);
-        highScoreText.text = $"HIGH SCORE: {highScore}";
+        highScoreText.text = $"HIGH SCORE = {saveData.HighScoreName} {highScore}";
     }
 
     public int GetHighScore()

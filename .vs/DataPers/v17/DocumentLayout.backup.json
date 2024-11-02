@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\assets\\scripts\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|c:\\users\\cmsl4\\documents\\createwithcode2\\datapers\\assets\\scripts\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|c:\\users\\cmsl4\\documents\\createwithcode2\\datapers\\assets\\scripts\\datamanagement\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\assets\\scripts\\datamanagement\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\datamanagement\\savemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|c:\\users\\cmsl4\\documents\\createwithcode2\\datapers\\assets\\scripts\\datamanagement\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\assets\\scripts\\datamanagement\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\datamanagement\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\assets\\scripts\\deathzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\deathzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D0CA65E-E426-16CC-0F6E-9F9336489AEC}|Assembly-CSharp.csproj|C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\assets\\scripts\\menuctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeathZone.cs",
+              "DocumentMoniker": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\DeathZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DeathZone.cs",
+              "ToolTip": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\DeathZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DeathZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T17:30:01.63Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -40,7 +57,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\DataManagement\\SaveManager.cs",
               "ToolTip": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\DataManagement\\SaveManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\DataManagement\\SaveManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAawEYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T01:26:20.457Z",
               "EditorCaption": ""
@@ -53,20 +70,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\DataManagement\\SaveData.cs",
               "ToolTip": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\DataManagement\\SaveData.cs",
               "RelativeToolTip": "Assets\\Scripts\\DataManagement\\SaveData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T01:26:08.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MenuCtrl.cs",
               "DocumentMoniker": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\MenuCtrl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuCtrl.cs",
               "ToolTip": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\MenuCtrl.cs",
               "RelativeToolTip": "Assets\\Scripts\\MenuCtrl.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T03:07:27.47Z"
             },
@@ -78,7 +95,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAawC8AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T02:48:44.416Z",
               "EditorCaption": ""
@@ -89,9 +106,9 @@
               "Title": "MainManager.cs",
               "DocumentMoniker": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\MainManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainManager.cs",
-              "ToolTip": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\MainManager.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\MainManager.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA9AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\cmsl4\\Documents\\CreateWithCode2\\DataPers\\Assets\\Scripts\\MainManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainManager.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAQwF8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T02:46:52.298Z",
               "EditorCaption": ""

@@ -7,9 +7,9 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    public static SaveManager Instance;
+    public static SaveManager Instance { get; private set; }
     private string savePath => Application.persistentDataPath + "/savefile.json";
-    private SaveData saveData;
+    [SerializeField] private SaveData saveData;
 
     private void Awake()
     {
@@ -22,12 +22,13 @@ public class SaveManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        LoadGame();
+        saveData = LoadGame();
     }
     public void SaveGame (SaveData data)
     {
         try
         {
+            saveData = data;
             string json = JsonUtility.ToJson(data);
             File.WriteAllText(savePath, json);
             Debug.Log("Game saved Successfully");
@@ -52,20 +53,22 @@ public class SaveManager : MonoBehaviour
             catch (IOException e)
             {
                 Debug.LogError($"Failed to load game: {e.Message}");
+                saveData = new SaveData();
             }
         }
         else
         {
             Debug.LogWarning("Save file not found. Returning default data.");
+            saveData = new SaveData();
         }
-        return new SaveData();
+        return saveData;
     }
 
     public void SaveHighScore(int highScore, string highScoreName)
     {
         SaveData data = LoadGame();
-        data.HighScore = GameManager.Instance.GetHighScore();
-        data.HighScoreName = GameManager.Instance.GetCurrentName();
+        data.HighScore = highScore;
+        data.HighScoreName = highScoreName;
         SaveGame(data);
     }
 
