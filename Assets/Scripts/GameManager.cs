@@ -7,10 +7,12 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public SaveManager saveManager;
     [SerializeField] public TMP_Text highScoreText;
     private int highScore = 0;
     [SerializeField] private TMP_Text nameText;
     private string currentName;
+    private SaveData saveData;
     
     private void Awake()
     {
@@ -21,18 +23,32 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        
 
+        
     }
 
     void Start()
     {
-        UpdateHighScoreText(highScore);
+        saveManager = SaveManager.Instance;
+        if (saveManager == null)
+        {
+            Debug.LogError("SaveManager Instance not found!");
+            return;
+        }
+
+            if (saveData != null)
+        {
+            UpdateHighScoreText(saveData.HighScore);
+        }
+        
     }
+
+    //public SaveData GetSaveDataFromGameManager() { return saveData; }
 
     private void SetHighScore(int score)
     {
         highScore = score;
+        
     }
 
     public void UpdateHighScoreText(int score)
@@ -41,10 +57,10 @@ public class GameManager : MonoBehaviour
         highScoreText.text = $"HIGH SCORE: {highScore}";
     }
 
-    public string GetHighScore()
+    public int GetHighScore()
     {
-        string scoreText = highScore.ToString();
-        return scoreText;
+        //string scoreText = highScore.ToString();
+        return highScore;
     }
 
     public void StartGame()
